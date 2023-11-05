@@ -20,13 +20,13 @@ namespace Lab3_B.Models
         [Display(Name="Imię")]
         [Required(ErrorMessage = "Musisz podać imię!")]
         [StringLength(maximumLength:50, ErrorMessage = "Imię jest niepoprawne!")]
-        public string Name { get; set; }
+        public required string Name { get; set; }
         [EmailAddress]
         [Display(Name = "Adres email")]
-        public string Email { get; set; }
+        public required string Email { get; set; }
         [Phone]
         [Display(Name = "Numer telefonu")]
-        public string Phone { get; set; }
+        public required string Phone { get; set; }
         [Display(Name = "Data urodzenia")]
         [DataType(DataType.Date)]
         public DateTime? Birth { get; set; }
@@ -34,5 +34,6 @@ namespace Lab3_B.Models
         public Priority Priority { get; set; }
         [HiddenInput]
         public DateTime Created { get; set; }
+
     }
 }
