@@ -1,4 +1,4 @@
-namespace Laboratorium_3.Models
+namespace Lab3_B.Models
 {
     public class ErrorViewModel
     {
