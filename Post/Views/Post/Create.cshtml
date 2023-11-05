@@ -1,0 +1,36 @@
+﻿@model PostClass
+<h1>Dodaj post</h1>
+<form form asp-action="PostForm" asp-controller="PostClass" method="post">
+    <div class="mb-3">
+        <label asp-for="Content">Zawartość</label>
+        <input class="form-control" asp-for="Content" />
+        <span class="text-danger" asp-validation-for="Content"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Author">Autor wpisu</label>
+        <input class="form-control" asp-for="Author" />
+        <span class="text-danger" asp-validation-for="Author"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Date">Data wpisu</label>
+        <input class="form-control" asp-for="Date" />
+        <span class="text-danger" asp-validation-for="Date"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Tags">Tagi</label>
+        <input class="form-control" asp-for="Tags" />
+        <span class="text-danger" asp-validation-for="Tags"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Comment">Komentarz</label>
+        <input class="form-control" asp-for="Comment" />
+        <span class="text-danger" asp-validation-for="Comment"></span>
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn-primary">Utwórz</button>
+    </div>
+</form>

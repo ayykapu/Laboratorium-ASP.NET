@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Post.Models;
 
 namespace Post.Controllers
 {
@@ -8,5 +9,22 @@ namespace Post.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(PostClass model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View();
+        }
+
     }
 }
