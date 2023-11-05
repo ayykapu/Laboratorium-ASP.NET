@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab1_4.10.2023", "Laborator
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2_11.10.2023", "Lab2\Lab2_11.10.2023.csproj", "{8BA24219-23CF-4002-8BC7-40E7CA4D0920}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3_18.10.2023_A", "..\..\..\..\Desktop\Nowy folder\Laboratorium ASP .NET - Hubert old\Laboratorium ASP .NET - Hubert\Laboratorium 3\Lab3_18.10.2023_A.csproj", "{FD0675CE-D35A-4D47-B95E-6A81A3378944}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3_18.10.2023_A", "..\..\Laboratorium-ASP.NET\Laboratorium 3 A\Lab3_18.10.2023_A.csproj", "{2B73174D-54B0-4AB2-95FC-8B69476FD7E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{8BA24219-23CF-4002-8BC7-40E7CA4D0920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BA24219-23CF-4002-8BC7-40E7CA4D0920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BA24219-23CF-4002-8BC7-40E7CA4D0920}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD0675CE-D35A-4D47-B95E-6A81A3378944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD0675CE-D35A-4D47-B95E-6A81A3378944}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD0675CE-D35A-4D47-B95E-6A81A3378944}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD0675CE-D35A-4D47-B95E-6A81A3378944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B73174D-54B0-4AB2-95FC-8B69476FD7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B73174D-54B0-4AB2-95FC-8B69476FD7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B73174D-54B0-4AB2-95FC-8B69476FD7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B73174D-54B0-4AB2-95FC-8B69476FD7E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
