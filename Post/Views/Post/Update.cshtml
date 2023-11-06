@@ -1,6 +1,7 @@
 ﻿@model PostClass
 <h1>Edytuj postt</h1>
 <form asp-action="Update" asp-controller="Post" method="post">
+    <input asp-for="Id" />
     <div class="mb-3">
         <label asp-for="Content">Zawartość</label>
         <input class="form-control" asp-for="Content" />
