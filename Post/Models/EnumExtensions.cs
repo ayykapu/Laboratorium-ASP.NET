@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace Lab3_B.Models
+namespace Post
 {
     static public class EnumExtensions
     {

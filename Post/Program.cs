@@ -6,15 +6,16 @@ namespace Post
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
 
+            var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSingleton<IPostService, MemoryPostService>();
 
-          //  builder.Services.AddSingleton<IPostService, MemoryPostService>
+
+
             var app = builder.Build();
-
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
@@ -36,6 +37,7 @@ namespace Post
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+
         }
     }
 }
