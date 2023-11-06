@@ -31,13 +31,18 @@ namespace Post.Models
         public required string Author { get; set; }
 
         [DataType(DataType.Date)]
-        [Required(ErrorMessage = "Musisz podać datę wpisu!")]
         public required DateTime Date { get; set; }
 
+        [Display(Name = "Tagi")]
+        [Required(ErrorMessage = "Musisz podać tag autora wpisu!")]
         public required string Tags { get; set; }
 
+        [Display(Name = "Komentarz")]
+        [Required(ErrorMessage = "Komentarz jest wymagany!")]
         public required string Comment { get; set; }
 
+        [Display(Name = "Temat")]
+        [Required(ErrorMessage = "Musisz podać temat wpisu!")]
         public required Topic Topic {  get; set; }
 
 

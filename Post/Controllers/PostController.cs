@@ -5,8 +5,6 @@ namespace Post.Controllers
 {
     public class PostController : Controller
     {
-        //static readonly Dictionary<int, Post> _posts = new Dictionary<int, Post>();
-        //static int id = 1;
         private readonly IPostService _postService;
 
         public PostController(IPostService postService)
