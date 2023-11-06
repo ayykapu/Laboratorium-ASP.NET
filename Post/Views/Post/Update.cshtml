@@ -1,6 +1,7 @@
-﻿@model PostClass
-<h1>Dodaj post</h1>
-<form form asp-action="PostForm" asp-controller="PostClass" method="post">
+﻿@model Post
+<h1>Edytuj post</h1>
+<form asp-controller="Post" asp-action="Update" method="post">
+    <input asp-for="Id" />
     <div class="mb-3">
         <label asp-for="Content">Zawartość</label>
         <input class="form-control" asp-for="Content" />
@@ -8,27 +9,20 @@
     </div>
 
     <div class="mb-3">
-        <label asp-for="Author">Autor wpisu</label>
+        <label asp-for="Author">Autor</label>
         <input class="form-control" asp-for="Author" />
         <span class="text-danger" asp-validation-for="Author"></span>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Date"></label>
-        <input asp-for="Date" class="form-control" type="text" readonly value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")">
-        <span asp-validation-for="Date" class="text-danger"></span>
-    </div>
-
-
     <div class="mb-3">
-        <label asp-for="Date">Data wpisu</label>
-        <input class="form-control" asp-for="Date" />
-        <span class="text-danger" asp-validation-for="Date"></span>
+        <label asp-for="PublicationDate">Data publikacji</label>
+        <input type="date" class="form-control" asp-for="PublicationDate" disabled>
+        <span class="text-danger" asp-validation-for="PublicationDate"></span>
     </div>
 
     <div class="mb-3">
         <label asp-for="Tags">Tagi</label>
-        <input class="form-control" asp-for="Tags" />
+        <select asp-for="Tags" asp-items="@Html.GetEnumSelectList<Tags>()" class="form-control"></select>
         <span class="text-danger" asp-validation-for="Tags"></span>
     </div>
 
@@ -37,7 +31,8 @@
         <input class="form-control" asp-for="Comment" />
         <span class="text-danger" asp-validation-for="Comment"></span>
     </div>
+
     <div class="mb-3">
-        <button type="submit" class="btn-primary">Utwórz</button>
+        <button type="submit" class="btn-primary">Zapisz</button>
     </div>
 </form>
