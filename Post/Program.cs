@@ -34,7 +34,8 @@ namespace Post
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+               // pattern: "{controller=Home}/{action=Index}/{id?}");
+               pattern: "{controller=Post}/{action=Create}/"); //automatyczne przekierowanie do tworzenia postu
 
             app.Run();
 
