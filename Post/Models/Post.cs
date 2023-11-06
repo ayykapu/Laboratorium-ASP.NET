@@ -15,7 +15,7 @@ namespace Post.Models
         Request
     }
 
-    public class PostClass 
+    public class PostClass
     {
         [HiddenInput]
         public int Id { get; set; }
@@ -25,7 +25,6 @@ namespace Post.Models
         [StringLength(maximumLength: 150, ErrorMessage = "Post jest zbyt długi!")]
         public required string Content { get; set; }
 
-
         [Display(Name = "Autor wpisu")]
         [Required(ErrorMessage = "Musisz podać nick autora wpisu!")]
         [StringLength(maximumLength: 50, ErrorMessage = "Nick jest zbyt długi!")]
@@ -33,11 +32,14 @@ namespace Post.Models
 
         [DataType(DataType.Date)]
         [Required(ErrorMessage = "Musisz podać datę wpisu!")]
-        public DateTime Date { get; set; }
+        public required DateTime Date { get; set; }
 
         public required string Tags { get; set; }
 
         public required string Comment { get; set; }
+
         public required Topic Topic {  get; set; }
+
+
     }
 }

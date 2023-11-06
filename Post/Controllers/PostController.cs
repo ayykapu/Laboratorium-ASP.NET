@@ -21,6 +21,7 @@ namespace Post.Controllers
             return View();
         }
 
+
         [HttpPost]
         public IActionResult Create(PostClass model)
         {
