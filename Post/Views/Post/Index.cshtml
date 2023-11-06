@@ -8,14 +8,14 @@
         <tr>
             <th> @Html.DisplayNameFor(model => model[0].Content)</th>
             <th> @Html.DisplayNameFor(model => model[0].Author)</th>
-            <th> @Html.DisplayNameFor(model => model[0].Date)</th>
             <th> @Html.DisplayNameFor(model => model[0].Tags)</th>
             <th> @Html.DisplayNameFor(model => model[0].Comment)</th>
+            <th> @Html.DisplayNameFor(model => model[0].Date)</th>
             <th> @Html.DisplayNameFor(model => model[0].Topic)</th>
             <th>Akcje</th>
         </tr>
     </thead>
-    <tbody>
+        <tbody style="background-color: lightblue;">
         @foreach (var item in Model)
         {
             <tr>
@@ -30,23 +30,23 @@
                 <td>
                     @item.Date
                 </td>
-
+            
                  <td>
                     @item.Tags
                 </td>
 
                 <td>
                     @item.Comment
-                </td>
+                </td>             
 
-                 <td>
+                <td>
                     @item.Topic.GetDisplayName()
                 </td>
-                
-                <td>
-                    <a class="btn btn-outline-primary" asp-controller="Post" asp-action="Update" asp-route-id="@item.Id">Edytuj</a>
-                     <a class="btn btn-outline-info" asp-controller="Post" asp-action="Details" asp-route-id="@item.Id">Szczegóły</a>
-                    <a class="btn btn-outline-danger" asp-controller="Post" asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+                            
+                <td >
+                        <a class="btn btn-outline-primary" style="background-color: whitesmoke;" asp-controller="Post" asp-action="Update" asp-route-id="@item.Id">Edytuj</a>
+                        <a class="btn btn-outline-primary" style="background-color: whitesmoke;" asp-controller="Post" asp-action="Details" asp-route-id="@item.Id">Szczegóły</a>
+                        <a class="btn btn-outline-primary" style="background-color: whitesmoke;" asp-controller="Post" asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
                 </td>
             </tr>
         }
